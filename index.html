@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masum Aman | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: #e0e7ff;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .contact {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 30px;
+            width: 250px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #222;
+            transition: 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .contact-card h3 {
+            margin: 15px 0;
+            color: #1d4ed8;
+        }
+
+        .contact-card span {
+            font-size: 35px;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .contact-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Masum Aman</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Hello, I'm Masum Aman</h1>
+        <p>B.Tech CSE Student | Cloud Computing | Python</p>
+        <p>Welcome to my Personal Portfolio Website.</p>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Feel free to connect with me for opportunities
+            and collaborations.
+        </p>
+
+        <div class="contact-container">
+
+            <a href="https://github.com/MasumAman"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-card">
+                <span>💻</span>
+                <h3>GitHub</h3>
+                <p>Explore My Projects</p>
+            </a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-card">
+                <span>🔗</span>
+                <h3>LinkedIn</h3>
+                <p>Connect With Me</p>
+            </a>
+
+            <a href="mailto:YOUR_EMAIL@gmail.com"
+               class="contact-card">
+                <span>📧</span>
+                <h3>Email</h3>
+                <p>Send Me an Email</p>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Masum Aman | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
